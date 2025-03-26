@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-03-2025 a las 18:13:36
+-- Tiempo de generación: 26-03-2025 a las 15:18:27
 -- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.1.25
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -114,8 +114,7 @@ INSERT INTO `dias_usuario` (`id_dia`, `dia`, `hora_inicio`, `hora_fin`, `tiempo_
 (133, '2025-03-20 00:00:00', '08:00:00', '15:11:00', '00:00:00', '00:00:00', 0, 'Camilo Ignacio Gomez', 0, 19465778),
 (134, '2025-03-20 00:00:00', '15:26:50', '17:00:00', '07:26:50', '00:00:00', 1, '', 0, 2),
 (135, '2025-03-20 00:00:00', '08:30:00', '17:00:00', '00:30:00', '00:00:00', 1, 'Camilo Ignacio Gomez', 0, 12015755),
-(136, '2025-03-21 00:00:00', '00:25:11', '00:29:22', '00:00:00', '15:30:38', 0, '', 1, 19465778),
-(137, '2025-03-21 00:00:00', '10:04:52', '17:05:24', '02:04:52', '00:00:00', 0, '', 0, 12015755);
+(136, '2025-03-21 00:00:00', '00:25:11', '00:29:22', '00:00:00', '00:00:00', 0, '', 1, 19465778);
 
 -- --------------------------------------------------------
 
@@ -240,22 +239,22 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`RUT`, `DV`, `nombre_completo`, `correo`, `cargo`, `estado`, `contraseña`, `creado_por`, `id_tribunal`, `id_rol`, `id_horario`) VALUES
-(1, '', 'Alvaro Diaz', 'adiazm@pjud.cl', NULL, 1, '$2y$10$MV7Ic8rnkwB7q2WVtHCQMOVQu1R4TI5/8e5Qj7VkiVvKUseGqG6R6', NULL, 29, 1, 1),
-(2, '', 'Claudio Lagos', 'clagosa@pjud.cl', NULL, 1, '$2y$10$/O72xjtQZBugay7fkD1r5O2WE2MhKODpFD.PP0BEg1qRpN/Pk3qkC', NULL, 29, 1, 1),
+(1, '', 'Alvaro Perez', 'alavarom@poderjudicial.cl', NULL, 1, '$2y$10$MV7Ic8rnkwB7q2WVtHCQMOVQu1R4TI5/8e5Qj7VkiVvKUseGqG6R6', NULL, 29, 1, 1),
+(2, '', 'Claudio Perez', 'claudio@poderjudicial.cl', NULL, 1, '$2y$10$/O72xjtQZBugay7fkD1r5O2WE2MhKODpFD.PP0BEg1qRpN/Pk3qkC', NULL, 29, 1, 1),
 (1111111, '4', 'Gustavo Muñoz', 'gmunoz@gmail.com', NULL, 1, '$2y$10$z93Zi8d8MZygo02C4aIwg.BLeYAlNs5BUk2IN08tkHRx7Yn8vVfA.', 1, 10, 2, 6),
-(2222222, '8', 'Susana Horias', 'shorias@pjud.cl', NULL, 1, '$2y$10$qd1qUZR2aFV7FGu37kqPOereUbG7dg1cyBGm3pkqfv9smdc7/BT5u', 1111111, 10, 4, 6),
+(2222222, '8', 'Susana Horias', 'shorias@poderjudicial.cl', NULL, 1, '$2y$10$qd1qUZR2aFV7FGu37kqPOereUbG7dg1cyBGm3pkqfv9smdc7/BT5u', 1111111, 10, 4, 6),
 (2819839, '6', 'Adam Escobara', 'adames14@gmail.com', NULL, 1, '$2y$10$ebXEk83enBgaIP0SnQo2PePkHEp.MYnCIS1GsD/NqXYprUua11MMy', 16528030, 10, 4, 6),
-(8888888, 'K', 'Nicolas Soto', 'nsoto@pjud.cl', NULL, 1, '$2y$10$m/2efrZBe8YwEwNNVI2KEOuXiFEIMoAZrrpwp9fFV0gq9B8GpS8j2', 18887622, 10, 4, 5),
+(8888888, 'K', 'Nicolas Soto', 'nsoto@poderjudicial.cl', NULL, 1, '$2y$10$m/2efrZBe8YwEwNNVI2KEOuXiFEIMoAZrrpwp9fFV0gq9B8GpS8j2', 18887622, 10, 4, 5),
 (10782237, '2', 'Gabriel Olivares', 'gabriel1@gmail.com', NULL, 1, '$2y$10$zZUIirbCuMxhwTtn1ZKjTO7vhqvh.mY7X8rb9YXXyAh8V7c9dZLPS', 16528030, 10, 3, 5),
-(12015755, '8', 'Sandra Alvarez', 'salvarezz@pjud.cl', NULL, 1, '$2y$10$EWcYbRmgWLdElBE85lRDpu9ig8.TZQznCCGJryysMcjT3OhbrR.MO', 18887622, 29, 3, 1),
-(16207200, '5', 'Valeria Martinez', 'vmartinezl@pjud.cl', NULL, 1, '$2y$10$39bkIpumbL/0P3itZGSIA.RXRV/VY1UunZXenXhe9YPZ4dQykcKKe', 1, 3, 2, 8),
-(16528030, 'K', 'juan escarez', 'jescarez@pjud.cl', NULL, 1, '$2y$10$IliAXzWF912vTgHvBF1Ofugk7/VDEDybPvIxy/HGUKU9otLuL1Ye.', 1, 29, 2, 1),
+(12015755, '8', 'Sandra Perez', 'sandra@poderjudicial.cl', NULL, 1, '$2y$10$EWcYbRmgWLdElBE85lRDpu9ig8.TZQznCCGJryysMcjT3OhbrR.MO', 18887622, 29, 3, 1),
+(16207200, '5', 'valeria perez', 'valel@poderjudicial.cl', NULL, 1, '$2y$10$39bkIpumbL/0P3itZGSIA.RXRV/VY1UunZXenXhe9YPZ4dQykcKKe', 1, 3, 2, 8),
+(16528030, 'K', 'juan perez', 'juan@poderjudicial.cl', NULL, 1, '$2y$10$IliAXzWF912vTgHvBF1Ofugk7/VDEDybPvIxy/HGUKU9otLuL1Ye.', 1, 29, 2, 1),
 (17120897, '1', 'Felipex Wild', 'felipeW@gmail.com', NULL, 0, '$2y$10$Ah.WW7gZm8EDGCosqXp7dORh65Y7dSCRlwnNsaUJfmvX9TiW2yxQW', 1, 24, 4, 5),
-(18887622, '6', 'Camilo Ignacio Gomez', 'cigomez@pjud.cl', NULL, 1, '$2y$10$wI3tMD4Fca1PpHnZ3mymyOk6U6ygGUnDZuEbpGz1mLnm1eqbFi0JO', 1, 29, 2, 9),
+(18887622, '6', 'Camilo Perez', 'camilo@poderjudicial.cl', NULL, 1, '$2y$10$wI3tMD4Fca1PpHnZ3mymyOk6U6ygGUnDZuEbpGz1mLnm1eqbFi0JO', 1, 29, 2, 9),
 (19233198, '6', 'juan santino', 'adames12@gmail.com', NULL, 1, '$2y$10$KA9.jGQaZ9iT45rR0VFPregqyALpLevnMaY0y5rLoRB.IfD0JO5pW', 1, 17, 2, 10),
-(19465778, '1', 'Marcelo Filcun', 'mfilcun@pjud.cl', NULL, 1, '$2y$10$IHHlvuusTMZ.AjR23.CPne5BB5kh0Nm0.nQG4w5E6vxQrNlEmQRMu', 18887622, 29, 4, 1),
-(20253812, '6', 'Francisco Lopez', 'flopez@pjud.cl', NULL, 1, '$2y$10$FloXdS.Q1AxuD/aJ2fKCOuzzDDC9fx9D6TGTp2ez/qpRtOq4MYHGS', 16207200, 3, 4, 6),
-(22222222, '2', 'Teluenco', 'teluenco@pjud.cl', NULL, 1, '$2y$10$0Bmhs71yu4ZrnSc1IBmdl.OdK8QbxHgEIychl7NW3K5r8IfoIBu3e', 1, 27, 2, 9);
+(19465778, '1', 'Marcelo Perez', 'marcelo@poderjudicial.cl', NULL, 1, '$2y$10$IHHlvuusTMZ.AjR23.CPne5BB5kh0Nm0.nQG4w5E6vxQrNlEmQRMu', 18887622, 29, 4, 1),
+(20253812, '6', 'Francisco Lopez', 'francisco@poderjudicial.cl', NULL, 1, '$2y$10$FloXdS.Q1AxuD/aJ2fKCOuzzDDC9fx9D6TGTp2ez/qpRtOq4MYHGS', 16207200, 3, 4, 6),
+(22222222, '2', 'Teluenco', 'teluenco@poderjudicial.cl', NULL, 1, '$2y$10$0Bmhs71yu4ZrnSc1IBmdl.OdK8QbxHgEIychl7NW3K5r8IfoIBu3e', 1, 27, 2, 9);
 
 --
 -- Índices para tablas volcadas
@@ -304,7 +303,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `dias_usuario`
 --
 ALTER TABLE `dias_usuario`
-  MODIFY `id_dia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
+  MODIFY `id_dia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
 
 --
 -- AUTO_INCREMENT de la tabla `roles_adm`
